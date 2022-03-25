@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav h1{
+    text-align: center;
+    margin-top:6rem;
+    font-size: 2rem;
+}
+nav p{
+    text-align: center;
+    margin-top:1rem;
+    font-size: 2rem;
+}
+h2{
+    text-align: center;
+    margin-top:1rem;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    margin-top:1rem;
+    font-size: 2rem;
+}
+.logo{
+    display: block;
+    position: absolute;
+    left: 387px;
+    top: 6.5rem;
+} 
+.main-container{
+    display: flex;
+}
+#square-math div{
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+#triangle-math div{
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 1.2rem;
+}
+#circle-math div{
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+/* desktop */
+@media (min-width:600px){
+    .main-container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0.5rem;
+    }
+    .square{
+        background-color:springgreen;
+        box-shadow: 1rem 0.9rem 0.9rem gray;
+    }
+    .triangle{
+        background-color:plum;
+        box-shadow: 1rem 0.9rem 0.9rem gray;
+    }
+    .circle{
+        background-color: palevioletred;
+        box-shadow: 1rem 0.9rem 0.9rem gray;
+    }
+    .header-form{
+        position: relative;
+    }
+    #square-math div{
+        width: 40rem;
+        height: 40rem;
+        margin: 2rem;
+        padding: 2rem;
+        border:none;
+        border-radius: 1.2rem;
+    }
+    #square-math form{
+        width: 100%;
+    }
+    #square-math form label{
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 2.5rem;
+        color: white;
+    }
+    #triangle-math div{
+        width: 41rem;
+        height: 55rem;
+        margin: 2rem;
+        padding: 2rem;
+        border: none;
+        border-radius: 1.2rem;
+    }
+    #triangle-math form{
+        width: 100%;
+    }
+    #triangle-math form label{
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 0.1rem;
+        color: white;
+    }
+    #triangle-math form :nth-child(3){
+        text-align: center;
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 0.1rem;
+        color: white;
+    }
+    #circle-math div{
+        width: 40rem;
+        height: 35rem;
+        margin: 2rem;
+        padding: 2rem;
+        border:none;
+        border-radius: 1.2rem;
+    }
+    #circle-math form{
+        width: 100%;
+    }
+    #circle-math form label{
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 2.5rem;
+        color: white;
+    }
+    .form-text input{
+        width: 70%;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+        opacity: 1px;
+    }
+    .form-text button:hover{
+        cursor: pointer;
+    }
+    .square button{
+        background-color: white;
+        border: none;
+        color: springgreen;
+        border-radius: 0.7rem;
+        padding: 6px 9px;
+        margin: 0rem 0.5rem;
+        text-decoration: none;
+        display: inline;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .triangle button{
+        background-color: white;
+        border: none;
+        color: plum;
+        border-radius: 0.7rem;
+        padding: 6px 9px;
+        margin: 0rem 0.5rem;
+        text-decoration: none;
+        display: inline;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .circle button{
+        background-color: white;
+        border: none;
+        color: palevioletred;
+        border-radius: 0.7rem;
+        padding: 6px 9px;
+        margin: 0rem 0.5rem;
+        text-decoration: none;
+        display: inline;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}

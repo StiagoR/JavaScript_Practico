@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./figuras.css" />
     <title>Figuras</title>
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
+    <header>
+    <nav>
+        <h1>Hi I'm a math Bot</h1>       
+        <img src="./icons/robot.png" class="logo" alt="robot">
+        <p>I can help you with math</p>
+    </nav>
+    </header>
+    <h2><strong>Geometry</strong></h2>
+    <div class="main-container">
+        <section id="square-math">
+            <div class="square">
+                <form action="" class="form-text">
+                    <img src="./icons/icons8-cuadrado-redondeado-50.png" alt="">
+                    <header class="header-form">Square</header>
+                    <label for="inputSquare">How long is each side of your square?</label>
+                    <input id="inputSquare" type="number">
+                    <button type="button" onclick="calculatePerimeterSquare()">Calcular el perimetro</button>
+                    <button type="button" onclick="calculateAreaSquare()">Calcular el área</button>
+                    </label>
+                </form>
+            </div>
+        </section>
+        <section id="triangle-math">
+            <div class="triangle">
+                <form action="" class="form-text">
+                    <img src="./icons/icons8-triangle-64.png" alt="">
+                    <header class="header-form">Triangle</header>
+                    <label>What are the measurements of your triangle?</label>
+                    <label for="inputTriangleA">Side A</label>
+                    <input id="inputTriangleA" type="number" >
+                    <label for="inputTriangleB">Side B</label>
+                    <input id="inputTriangleB" type="number" >
+                    <label for="inputTriangleBase">Base</label>
+                    <input id="inputTriangleBase" type="number" >
+                    <label for="inputTriangleH">Height</label>
+                    <input id="inputTriangleH" type="number" >
+                    <button type="button" onclick="calculatePerimeterTriangle()">Calcular el perimetro</button>
+                    <button type="button" onclick="calculateAreaTriangle()">Calcular el área</button>
+                    </label>
+                </form>
+            </div>
+        </section>
+        <section id="circle-math">
+            <div class="circle">
+                <form action="" class="form-text">
+                    <img src="./icons/icons8-círculo-50.png" alt="">
+                    <header class="header-form">Circle</header>
+                    <label for="inputCircleRadio">What is the radio of your circle?</label>
+                    <input id="inputCircleRadio" type="number">
+                    <button type="button" onclick="calculatePerimeterCircle()">Calcular el perimetro</button>
+                    <button type="button" onclick="calculateAreaCircle()">Calcular el área</button>
+                    </label>
+                </form>
+            </div>
+        </section>
+    </div>
     <script src="./figuras.js"></script>
+    <footer>
+        <p>SR</p>
+    </footer>
 </body>
 </html>
