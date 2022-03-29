@@ -8,3 +8,17 @@ Este repositorio es un proyecto personal para practicar las bases, fundamentos y
 - Segundo paso: Implemetar las formuals en JS
 - Tercer paso: Crear Funciones
 - Cuarto paso: Integrar JS con HTML 
+
+### Taller 2: Calculo de Porcentajes y Descuentos 
+
+- Primer Paso: Definir las Formulas 
+- Segundo paso: Implemetar las formuals en JS
+- Tercer paso: Crear Funciones
+- Cuarto paso: Integrar JS con HTML 
+
+### Taller 2: Promedio, Mediana y Moda
+
+- Primer Paso: Definir las Formulas 
+- Segundo paso: Implemetar las formuals en JS
+- Tercer paso: Crear Funciones
+- Cuarto paso: Integrar JS con HTML 

@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar{ 
+    margin: 0 2rem ;
+    padding: 2rem;
+    border-bottom: 1px solid lightgray;
+}
+.navbar h1{ 
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: start;
+}
+.card{
+    min-width: 280px;
+    width: 400px;
+    height: 500px;
+    background-color: lightgray;
+    border-radius: 40px;
+    box-shadow: 1rem 0.9rem 0.9rem gray;
+    margin:5rem auto 0;
+    transition-duration: 200ms;
+    border: solid 3px black;
+}
+.card-top p{
+    font-size: 2.5rem;
+    position: relative;
+    top: 3.5rem;
+    display: block;
+    text-align: center;
+    
+}
+.profile-data{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 6rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.profile-data--img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto 2rem;
+}
+.profile-data label{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.profile-data input{
+    border:none;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.2rem;
+}
+.profile-data :nth-child(3)::placeholder, .profile-data :nth-child(5)::placeholder{
+    color: lightgray
+}
+.profile-data button{
+    height: 3.5rem;
+    border: none;
+    color:gray;
+    font-size: 1.5rem;
+    background-color: lightyellow;
+    border-radius: 0.7rem;
+}
+.profile-data button:hover{
+    color: black;
+    cursor: pointer;
+}
+#ResultP{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+@media (max-width: 600px){
+    .navbar h1{ 
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    }
+}
