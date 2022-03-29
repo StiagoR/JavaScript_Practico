@@ -14,7 +14,7 @@
     <header>
     <nav>
         <h1>Hi I'm a math Bot</h1>       
-        <img src="./icons/robot.png" class="logo" alt="robot">
+        <!-- <img src="./icons/robot.png" class="logo" alt="robot"> -->
         <p>I can help you with math</p>
     </nav>
     </header>
@@ -23,21 +23,20 @@
         <section id="square-math">
             <div class="square">
                 <form action="" class="form-text">
-                    <img src="./icons/icons8-cuadrado-redondeado-50.png" alt="">
-                    <header class="header-form">Square</header>
+                    <header> <strong> Square</strong></header>
                     <label for="inputSquare">How long is each side of your square?</label>
                     <input id="inputSquare" type="number">
                     <button type="button" onclick="calculatePerimeterSquare()">Calcular el perimetro</button>
                     <button type="button" onclick="calculateAreaSquare()">Calcular el área</button>
                     </label>
                 </form>
+                <p id="answerSquare"></p>
             </div>
         </section>
         <section id="triangle-math">
             <div class="triangle">
                 <form action="" class="form-text">
-                    <img src="./icons/icons8-triangle-64.png" alt="">
-                    <header class="header-form">Triangle</header>
+                    <header><strong>Triangle</strong></header>
                     <label>What are the measurements of your triangle?</label>
                     <label for="inputTriangleA">Side A</label>
                     <input id="inputTriangleA" type="number" >
@@ -47,22 +46,24 @@
                     <input id="inputTriangleBase" type="number" >
                     <label for="inputTriangleH">Height</label>
                     <input id="inputTriangleH" type="number" >
+                </form>
+                <section id="Botones" class="buttons">
                     <button type="button" onclick="calculatePerimeterTriangle()">Calcular el perimetro</button>
                     <button type="button" onclick="calculateAreaTriangle()">Calcular el área</button>
-                    </label>
-                </form>
+                </section>
+                
             </div>
         </section>
         <section id="circle-math">
             <div class="circle">
                 <form action="" class="form-text">
-                    <img src="./icons/icons8-círculo-50.png" alt="">
-                    <header class="header-form">Circle</header>
+                    <header><strong>Circle</strong></header>
                     <label for="inputCircleRadio">What is the radio of your circle?</label>
                     <input id="inputCircleRadio" type="number">
                     <button type="button" onclick="calculatePerimeterCircle()">Calcular el perimetro</button>
                     <button type="button" onclick="calculateAreaCircle()">Calcular el área</button>
                 </form>
+                <p id="answerCircle"></p>
             </div>
         </section>
     </div>

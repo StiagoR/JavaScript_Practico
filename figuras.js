@@ -111,14 +111,17 @@ function calculatePerimeterSquare(){
     const input = document.getElementById("inputSquare");
     const value = Number(input.value);
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    const Result = document.getElementById("answerSquare");
+    Result.innerText = "The perimeter or the Square is " + perimetro;
+
 }
 
 function calculateAreaSquare(){
     const input=document.getElementById("inputSquare");
     const value = Number(input.value);
     const area = áreaCuadrado(value);
-    alert(area);
+    const Result = document.getElementById("answerSquare");
+    Result.innerText = "The Area or the Square is " + area;
 }
 
 function calculatePerimeterTriangle(){
@@ -145,14 +148,18 @@ function calculatePerimeterCircle(){
     const input = document.getElementById("inputCircleRadio");
     const valueR = Number(input.value);
     const perimetro = perimetroCirculo (valueR);
-    alert(perimetro);
+    
+    const Result = document.getElementById("answerCircle");
+    Result.innerText = "The perimeter or the Circle is " + perimetro;
 }
 
 function calculateAreaCircle(){
     const input = document.getElementById("inputCircleRadio");
     const valueR = Number(input.value);
     const area = áreaCirculo(valueR);
-    alert(area);
+
+    const Result = document.getElementById("answerCircle");
+    Result.innerText = "The Area or the Circle is " + area;
 }
 
 // function altura (lado1,lado2,base){

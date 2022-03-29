@@ -54,24 +54,37 @@ header{
     background-color: palevioletred;
     box-shadow: 1rem 0.9rem 0.9rem gray;
 }
-.header-form{
-    position: relative;
-    top: -2rem;
-    left: 8rem;
-    width: fit-content;
+.form-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.form-text input{
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    opacity: 1px;
+}
+.form-text button:hover{
+    cursor: pointer;
+}
+.form-text header{
     text-align: center;
-    display: inline;
 }
 #square-math div{
     width: 40rem;
-    height: 42rem;
+    height: 40rem;
     margin: 2rem;
     padding: 2rem;
     border:none;
     border-radius: 1.2rem;
-}
-#square-math form{
-    width: 100%;
 }
 #square-math form label{
     font-size: 2rem;
@@ -79,9 +92,22 @@ header{
     margin-bottom: 2.5rem;
     color: white;
 }
+#square-math form :nth-child(2){
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+#answerSquare{
+    margin-top: 3.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
 #triangle-math div{
     width: 41rem;
-    height: 42rem;
+    height: 40rem;
     margin: 2rem;
     padding: 2rem;
     border: none;
@@ -96,16 +122,17 @@ header{
     margin-bottom: 0.1rem;
     color: white;
 }
-#triangle-math form :nth-child(3){
+#triangle-math form :nth-child(2){
     text-align: center;
     font-size: 2rem;
     display: block;
+    margin-top: 1rem;
     margin-bottom: 0.1rem;
     color: white;
 }
 #circle-math div{
     width: 40rem;
-    height: 42rem;
+    height: 40rem;
     margin: 2rem;
     padding: 2rem;
     border:none;
@@ -120,19 +147,18 @@ header{
     margin-bottom: 2.5rem;
     color: white;
 }
-.form-text input{
-    width: 70%;
-    height: 2.5rem;
-    margin-top: 0rem;
+#circle-math form :nth-child(2){
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-    opacity: 1px;
+    color: white;
 }
-.form-text button:hover{
-    cursor: pointer;
+#answerCircle{
+    margin-top: 3.5rem;
+    text-align: center;
+    font-size: 1.8rem;
 }
 .square button{
     background-color: white;
@@ -140,7 +166,7 @@ header{
     color: springgreen;
     border-radius: 0.7rem;
     padding: 6px 9px;
-    margin: 0rem 0.5rem;
+    margin: 1rem 0.5rem;
     text-decoration: none;
     display: inline;
     font-size: 1.6rem;
@@ -152,7 +178,7 @@ header{
     color: plum;
     border-radius: 0.7rem;
     padding: 6px 9px;
-    margin: 0rem 0.5rem;
+    margin: 1rem 1.5rem;
     text-decoration: none;
     display: inline;
     font-size: 1.6rem;
@@ -164,7 +190,7 @@ header{
     color: palevioletred;
     border-radius: 0.7rem;
     padding: 6px 9px;
-    margin: 0rem 0.5rem;
+    margin: 1rem 0.5rem;
     text-decoration: none;
     display: inline;
     font-size: 1.6rem;
@@ -198,17 +224,9 @@ header{
         background-color: palevioletred;
         box-shadow: 1rem 0.9rem 0.9rem gray;
     }
-    .header-form{
-        position: relative;
-        top: -2rem;
-        left: 8rem;
-        width: fit-content;
-        text-align: center;
-        display: inline;
-    }
     #square-math div{
-        width: 30rem;
-        height: 42rem;
+        width: auto;
+        height: 40rem;
         margin: 2rem;
         padding: 2rem;
         border:none;
@@ -223,9 +241,14 @@ header{
         margin-bottom: 2.5rem;
         color: white;
     }
+    #answerSquare{
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 2rem;
+    }
     #triangle-math div{
-        width: 30rem;
-        height: 42rem;
+        width: auto;
+        height: auto;
         margin: 2rem;
         padding: 2rem;
         border: none;
@@ -240,7 +263,7 @@ header{
         margin-bottom: 0.1rem;
         color: white;
     }
-    #triangle-math form :nth-child(3){
+    #triangle-math form :nth-child(2){
         text-align: center;
         font-size: 2rem;
         display: block;
@@ -248,8 +271,8 @@ header{
         color: white;
     }
     #circle-math div{
-        width: 30rem;
-        height: 42rem;
+        width: auto;
+        height: 40rem;
         margin: 2rem;
         padding: 2rem;
         border:none;
@@ -264,8 +287,13 @@ header{
         margin-bottom: 2.5rem;
         color: white;
     }
+    #answerCircle{
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 2rem;
+    }
     .form-text input{
-        width: 70%;
+        width: 100%;
         height: 2.5rem;
         margin-top: 0rem;
         margin-bottom: 1rem;
@@ -284,7 +312,7 @@ header{
         color: springgreen;
         border-radius: 0.7rem;
         padding: 6px 9px;
-        margin: 0rem 0.5rem;
+        margin: 1rem 0.5rem;
         text-decoration: none;
         display: inline;
         font-size: 1.6rem;
@@ -296,7 +324,7 @@ header{
         color: plum;
         border-radius: 0.7rem;
         padding: 6px 9px;
-        margin: 0rem 0.5rem;
+        margin: 1rem 3.5rem;
         text-decoration: none;
         display: inline;
         font-size: 1.6rem;
@@ -308,7 +336,7 @@ header{
         color: palevioletred;
         border-radius: 0.7rem;
         padding: 6px 9px;
-        margin: 0rem 0.5rem;
+        margin: 1rem 0.5rem;
         text-decoration: none;
         display: inline;
         font-size: 1.6rem;
