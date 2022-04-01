@@ -12,7 +12,7 @@ body{
 
 nav h1{
     text-align: center;
-    margin-top:6rem;
+    margin-top:1rem;
     font-size: 2rem;
 }
 nav p{
@@ -23,9 +23,8 @@ nav p{
 h2{
     text-align: center;
     margin-top:1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
-    font-family: 'Courier New', Courier, monospace;
 }
 header{
     margin-top:1rem;
@@ -80,7 +79,7 @@ header{
 }
 #square-math div{
     width: 40rem;
-    height: 40rem;
+    height: 50rem;
     margin: 2rem;
     padding: 2rem;
     border:none;
@@ -101,20 +100,24 @@ header{
     color: white;
 }
 #answerSquare{
-    margin-top: 3.5rem;
+    margin: auto;
     text-align: center;
     font-size: 1.8rem;
+    border: 1px dashed black;
+    padding: 7.5rem;
+    width: 85%;
+    height: 22rem;
 }
 #triangle-math div{
     width: 41rem;
-    height: 40rem;
+    height: 50rem;
     margin: 2rem;
     padding: 2rem;
     border: none;
     border-radius: 1.2rem;
 }
 #triangle-math form{
-    width: 100%;
+    width: 90%;
 }
 #triangle-math form label{
     font-size: 1.5rem;
@@ -130,16 +133,25 @@ header{
     margin-bottom: 0.1rem;
     color: white;
 }
+#answerTriangle{
+    margin:auto;
+    text-align: center;
+    font-size: 1.8rem;
+    border: 1px  dashed black;
+    padding: 2rem;
+    width: 85%;
+    height: 8rem;
+}
 #circle-math div{
     width: 40rem;
-    height: 40rem;
+    height: 50rem;
     margin: 2rem;
     padding: 2rem;
     border:none;
     border-radius: 1.2rem;
 }
 #circle-math form{
-    width: 100%;
+    width: 90%;
 }
 #circle-math form label{
     font-size: 2rem;
@@ -156,9 +168,17 @@ header{
     color: white;
 }
 #answerCircle{
-    margin-top: 3.5rem;
+    margin:auto;
     text-align: center;
     font-size: 1.8rem;
+    border: 1px  dashed black;
+    padding: 7.5rem;
+    width: 85%;
+    height: 22rem;
+}
+#Botones{
+    display: flex;
+    justify-content: space-between;
 }
 .square button{
     background-color: white;
@@ -166,7 +186,7 @@ header{
     color: springgreen;
     border-radius: 0.7rem;
     padding: 6px 9px;
-    margin: 1rem 0.5rem;
+    margin: 2rem auto;
     text-decoration: none;
     display: inline;
     font-size: 1.6rem;
@@ -178,7 +198,7 @@ header{
     color: plum;
     border-radius: 0.7rem;
     padding: 6px 9px;
-    margin: 1rem 1.5rem;
+    margin: 1rem auto;
     text-decoration: none;
     display: inline;
     font-size: 1.6rem;
@@ -190,14 +210,14 @@ header{
     color: palevioletred;
     border-radius: 0.7rem;
     padding: 6px 9px;
-    margin: 1rem 0.5rem;
+    margin: 3.5rem auto;
     text-decoration: none;
     display: inline;
     font-size: 1.6rem;
     font-weight: 400;
 }
 /* desktop */
-@media (max-width:600px){
+@media (max-width:900px){
     *{
         box-sizing: border-box;
         margin: 0;
@@ -242,9 +262,13 @@ header{
         color: white;
     }
     #answerSquare{
-        margin-top: 5rem;
-        text-align: center;
-        font-size: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    border: 1px dashed black;
+    padding: 3rem;
+    width: 85%;
+    height: 10rem;
     }
     #triangle-math div{
         width: auto;
@@ -270,6 +294,15 @@ header{
         margin-bottom: 0.1rem;
         color: white;
     }
+    #answerTriangle{
+        margin:auto;
+        text-align: center;
+        font-size: 1.8rem;
+        border: 1px  dashed black;
+        padding: 1.5rem;
+        width: 85%;
+        height: 8rem;
+    }
     #circle-math div{
         width: auto;
         height: 40rem;
@@ -288,9 +321,13 @@ header{
         color: white;
     }
     #answerCircle{
-        margin-top: 5rem;
+        margin-top: 4rem;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        border: 1px dashed black;
+        padding: 2.5rem;
+        width: 85%;
+        height: 10rem;
     }
     .form-text input{
         width: 100%;
@@ -312,7 +349,7 @@ header{
         color: springgreen;
         border-radius: 0.7rem;
         padding: 6px 9px;
-        margin: 1rem 0.5rem;
+        margin: 1rem auto;
         text-decoration: none;
         display: inline;
         font-size: 1.6rem;
@@ -324,7 +361,7 @@ header{
         color: plum;
         border-radius: 0.7rem;
         padding: 6px 9px;
-        margin: 1rem 3.5rem;
+        margin: 1rem auto;
         text-decoration: none;
         display: inline;
         font-size: 1.6rem;
@@ -336,7 +373,7 @@ header{
         color: palevioletred;
         border-radius: 0.7rem;
         padding: 6px 9px;
-        margin: 1rem 0.5rem;
+        margin: 1rem auto;
         text-decoration: none;
         display: inline;
         font-size: 1.6rem;

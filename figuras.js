@@ -132,7 +132,9 @@ function calculatePerimeterTriangle(){
     const inputBase = document.getElementById("inputTriangleBase");
     const valueBase = Number(inputBase.value);
     const perimetro = perimetroTriangulo(valueA,valueB,valueBase);
-    alert(perimetro);
+
+    const Result = document.getElementById("answerTriangle");
+    Result.innerText = "The perimeter or the Triangle is " + perimetro;
 }
 
 function calculateAreaTriangle(){
@@ -141,7 +143,9 @@ function calculateAreaTriangle(){
     const inputH = document.getElementById("inputTriangleH");
     const valueH = Number(inputH.value);
     const area = areaTriangulo(valueBase,valueH);
-    alert(area);
+
+    const Result = document.getElementById("answerTriangle");
+    Result.innerText = "Th Area or the Triangle is " + area;
 }
 
 function calculatePerimeterCircle(){

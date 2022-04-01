@@ -13,7 +13,7 @@
 <body>
     <header>
     <nav>
-        <h1>Hi I'm a math Bot</h1>       
+        <h1>HI THIS IS A MATH BOT</h1>       
         <!-- <img src="./icons/robot.png" class="logo" alt="robot"> -->
         <p>I can help you with math</p>
     </nav>
@@ -26,10 +26,11 @@
                     <header> <strong> Square</strong></header>
                     <label for="inputSquare">How long is each side of your square?</label>
                     <input id="inputSquare" type="number">
+                </form>
+                <section id="Botones" class="buttons">
                     <button type="button" onclick="calculatePerimeterSquare()">Calcular el perimetro</button>
                     <button type="button" onclick="calculateAreaSquare()">Calcular el área</button>
-                    </label>
-                </form>
+                </section>
                 <p id="answerSquare"></p>
             </div>
         </section>
@@ -51,7 +52,7 @@
                     <button type="button" onclick="calculatePerimeterTriangle()">Calcular el perimetro</button>
                     <button type="button" onclick="calculateAreaTriangle()">Calcular el área</button>
                 </section>
-                
+                <p id="answerTriangle"></p>
             </div>
         </section>
         <section id="circle-math">
@@ -60,9 +61,11 @@
                     <header><strong>Circle</strong></header>
                     <label for="inputCircleRadio">What is the radio of your circle?</label>
                     <input id="inputCircleRadio" type="number">
+                </form>
+                <section id="Botones" class="buttons">    
                     <button type="button" onclick="calculatePerimeterCircle()">Calcular el perimetro</button>
                     <button type="button" onclick="calculateAreaCircle()">Calcular el área</button>
-                </form>
+                </section>
                 <p id="answerCircle"></p>
             </div>
         </section>
