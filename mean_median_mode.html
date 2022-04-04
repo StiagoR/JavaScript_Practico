@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mean_median_mode.css" />
+    <title>Mean, Median and Mode</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Mean, Median and Mode</h1>
+    </nav>
+    <article class="card">
+        <div class="card-top">
+            <p> <strong>Calculate your measures of central tendency</strong></p>
+        </div>
+        <form class="profile-data">
+            <img class="profile-data--img"src="./icons/icons8-research-64.png" alt="">
+            <label for="inputPrice">Insert your data. </label>
+            <input placeholder="Data" id="inputPrice" type="number">
+        </form>
+        <div class="buttons">
+            <button class="button" type="button">Average</button>
+            <button class="button" type="button">Median</button>
+            <button class="button" type="button">Mode</button>
+            <p id="ResultP"></p>
+        </div>
+    </article>
+    <script src="./promedio.js"></script>
+</body>
+</html>
